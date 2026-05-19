@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI SaaS Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>💬 Chats</h2>
+    <button onclick="newChat()">+ New Chat</button>
+    <div id="chatList"></div>
+  </div>
+
+  <!-- Main chat -->
+  <div class="main">
+
+    <div class="topbar">⚡ AI SaaS Assistant</div>
+
+    <div id="chatbox"></div>
+
+    <div class="typing" id="typing">AI is typing...</div>
+
+    <div class="inputBox">
+      <input id="input" placeholder="Ask anything..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
